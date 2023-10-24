@@ -6,3 +6,4 @@ This is mostly meant as a didactic exercise for myself, but seeing it (kinda) sp
 The model architecture is based off the implementation in the video [here](https://www.youtube.com/embed/kCc8FmEb1nY?si=y3iDRUCW49K8AaOR), however boilerplate code has been added for better training.
 
 
+THIS IS A TEST
