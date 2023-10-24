@@ -156,8 +156,8 @@ class yueGPT(nn.Module):
                 probs = F.softmax(logits, -1) # (B)
                 # Sample from distribution
                 next_idx = torch.multinomial(probs, 1) # (B, 1)
+                print(decode(next_idx[0].cpu().numpy())[0], end='')
                 idx = torch.cat((idx, next_idx), dim=1)
-            return idx
         else:
             while True:
                 idx_cond = idx[:, -BLOCK_SIZE:] # (Gets last T entries: (B, T))
